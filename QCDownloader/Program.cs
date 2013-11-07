@@ -73,8 +73,7 @@ namespace QCDownloader
 			foreach (Req r in req_filter.NewList()) 
 			{
 				string name = r.Name.Replace("\"","").Replace("\t","").Trim();
-				string lastmodified = string.Format("{0:Y-M-d hh:mm:ss}", r["RQ_VTS"]);
-				
+								
 				Console.WriteLine("Req \"{0}\"", name);
 				
 				rfs.WriteLine(String.Join("\t", new String[]{
@@ -86,9 +85,7 @@ namespace QCDownloader
 				                          }));
 				
 				if (!r.HasAttachment)
-				{
 					continue;
-				}
 				
 				AttachmentFactory att_factory = r.Attachments;
 				

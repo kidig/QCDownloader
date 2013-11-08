@@ -1,4 +1,4 @@
 QCDownloader
 ============
 
-Download for requirements from HP Quality Center
+Download requirements and attachments from HP Quality Center.
